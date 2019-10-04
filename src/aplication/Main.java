@@ -21,7 +21,7 @@ public class Main {
 		
 		String path = "..\\writingFiles-java\\" + nomeArq + ".txt";
 		
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
 			for(String linha : linhas) {
 				bw.write(linha);
 				bw.newLine();
